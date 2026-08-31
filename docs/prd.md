@@ -39,9 +39,32 @@ O sistema busca centralizar essas informações em uma interface simples, respon
 
 ## 📝 4. Histórias de Usuário e Escopo
 
-## 👕 Épico 1: Catálogo de Camisetas
+## 🔐 Épico 1: Autenticação e Conta
 
- ### US01 — Visualizar Camisetas
+ ### US01 — Criar Conta
+
+ Como um Visitante, quero criar uma conta informando meu nome, e-mail e senha para acessar as funcionalidades da PrintaAI.
+ Critérios de Aceitação:
+
+- Nome, e-mail e senha são obrigatórios;
+- O e-mail deve possuir formato válido;
+- A senha deve possuir um tamanho mínimo;
+- Os dados da conta devem ser armazenados;
+- Após o cadastro, o usuário deve poder acessar o sistema.
+
+### US02 — Fazer Login
+
+ Como um Cliente, quero informar meu e-mail e senha para acessar o catálogo e realizar pedidos.
+ Critérios de Aceitação:
+
+- E-mail e senha devem ser obrigatórios;
+- O sistema deve verificar se os dados correspondem a uma conta cadastrada;
+- Em caso de erro, deve ser apresentada uma mensagem;
+- Após o login, o cliente deve ser direcionado ao catálogo.
+
+## 👕 Épico 2: Catálogo de Camisetas
+
+ ### US03 — Visualizar Camisetas
 
  Como um Visitante, quero visualizar os modelos de camisetas disponíveis para conhecer as opções oferecidas pela PrintaAI.
  Critérios de Aceitação:
@@ -50,9 +73,9 @@ O sistema busca centralizar essas informações em uma interface simples, respon
 - Cada camiseta deve apresentar informações básicas, como nome, imagem e preço;
 - A listagem deve funcionar em dispositivos mobile e desktop.
 
-## 🛒 Épico 2: Cadastro de Pedidos
+## 🛒 Épico 3 Cadastro de Pedidos
 
- ### US03 — Criar Pedido
+ ### US04 — Criar Pedido
 
  Como um Cliente, quero preencher um formulário com meus dados e as características da camiseta para registrar um novo pedido.
  Critérios de Aceitação:
@@ -65,8 +88,9 @@ O sistema busca centralizar essas informações em uma interface simples, respon
 - Cor deve ser selecionada;
 - Estampa deve ser selecionada;
 - Quantidade deve ser informada;
+- O sistema deve impedir o envio do formulário quando houver dados inválidos.
 
- ### US04 — Personalizar Camiseta
+ ### US05 — Personalizar Camiseta
 
  Como um Cliente, quero escolher características da camiseta, como cor, tamanho e estampa, para criar um pedido de acordo com minhas preferências.
  Critérios de Aceitação:
@@ -76,7 +100,7 @@ O sistema busca centralizar essas informações em uma interface simples, respon
 - O cliente deve escolher uma estampa disponível;
 - A quantidade deve ser um valor positivo.
 
- ### US05 — Informar Endereço
+ ### US06 — Informar Endereço
 
  Como um Cliente, quero informar meu CEP para preencher os dados básicos do endereço do pedido de forma mais rápida.
  Critérios de Aceitação:
@@ -86,19 +110,18 @@ O sistema busca centralizar essas informações em uma interface simples, respon
 - Os dados retornados devem ser apresentados ao cliente;
 - O sistema deve informar o usuário caso o CEP não seja encontrado ou ocorra um erro na consulta.
 
- ### US06 — Confirmar Pedido
+ ### US07 — Confirmar Pedido
 
  Como um Cliente, quero revisar as informações da minha camiseta antes de confirmar o pedido para evitar erros no cadastro.
  Critérios de Aceitação:
 
-- O sistema deve impedir o envio do formulário quando houver dados inválidos.
 - O sistema deve apresentar um resumo das informações preenchidas;
 - O pedido somente deve ser registrado após a confirmação;
 - Após o cadastro, o usuário deve receber uma mensagem indicando que o pedido foi realizado.
 
-## 📋 Épico 3: Visualização e Gerenciamento de Pedidos
+## 📋 Épico 4: Visualização e Gerenciamento de Pedidos
 
- ### US07 — Visualizar Pedidos
+ ### US08 — Visualizar Pedidos
 
  Como um Cliente, quero visualizar os pedidos cadastrados para consultar as camisetas que solicitei.
  Critérios de Aceitação:
@@ -107,7 +130,7 @@ O sistema busca centralizar essas informações em uma interface simples, respon
 - Cada pedido deve apresentar informações como cliente, modelo, tamanho, cor, quantidade e status;
 - Os dados devem ser carregados dinamicamente.
 
- ### US08 — Excluir Pedido
+ ### US09 — Excluir Pedido
 
  Como um Cliente, quero excluir um pedido cadastrado para remover pedidos que não desejo mais manter na lista.
  Critérios de Aceitação:
@@ -116,9 +139,9 @@ O sistema busca centralizar essas informações em uma interface simples, respon
 - O pedido excluído não deve permanecer na listagem;
 - A listagem deve ser atualizada após a exclusão.
 
-## 💾 Épico 4: Persistência dos Dados
+## 💾 Épico 5: Persistência dos Dados
 
- ### US09 — Armazenar Dados do Pedido
+ ### US10 — Armazenar Dados do Pedido
 
  Como um Cliente, quero que os dados do meu pedido sejam armazenados para que possam ser consultados posteriormente.
  Critérios de Aceitação:
@@ -127,7 +150,7 @@ O sistema busca centralizar essas informações em uma interface simples, respon
 - Os dados devem ser armazenados em formato JSON;
 - A aplicação deve conseguir recuperar os pedidos armazenados.
 
- ### US10 — Manter Preferências Localmente
+ ### US11 — Manter Preferências Localmente
 
  Como um Cliente, quero que meu nome e e-mail sejam armazenados localmente para não precisar preenchê-los novamente ao realizar outro pedido.
  Critérios de Aceitação:
