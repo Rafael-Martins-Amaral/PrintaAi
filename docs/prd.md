@@ -1,7 +1,7 @@
 # 👕 Product Requirements Document (PRD) — PrintaAI
 ## 1. Visão Geral e Objetivo
 
-O PrintaAI é uma aplicação web para gerenciamento de pedidos de camisetas personalizadas. O sistema permite que clientes escolham características da camiseta, como modelo, cor, tamanho e estampa, e registrem seus pedidos de forma simples e organizada.
+O *PrintaAI* é uma aplicação web para gerenciamento de pedidos de camisetas personalizadas. O sistema permite que clientes escolham características da camiseta, como modelo, cor, tamanho e estampa, e registrem seus pedidos de forma simples e organizada.
 
 ### 🎯 1.1 Objetivo do Produto
 
