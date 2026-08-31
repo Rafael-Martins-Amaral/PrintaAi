@@ -25,7 +25,7 @@ O sistema busca centralizar essas informações em uma interface simples, respon
 
 ## 3. Funcionalidades Principais
 
-- O PrintaAI terá como principais funcionalidades:
+ O PrintaAI terá como principais funcionalidades:
 
 - Visualização dos modelos de camisetas disponíveis;
 - Cadastro de pedidos de camisetas personalizadas;
@@ -50,14 +50,6 @@ O sistema busca centralizar essas informações em uma interface simples, respon
 - Cada camiseta deve apresentar informações básicas, como nome, imagem e preço;
 - A listagem deve funcionar em dispositivos mobile e desktop.
 
- ### US02 — Selecionar Modelo
-
- Como um Cliente, quero selecionar um modelo de camiseta para utilizá-lo no meu pedido.
- Critérios de Aceitação:
-
-- O modelo escolhido deve ser identificado no formulário de pedido;
-- O cliente deve poder escolher entre os modelos disponíveis.
-
 ## 🛒 Épico 2: Cadastro de Pedidos
 
  ### US03 — Criar Pedido
@@ -67,12 +59,12 @@ O sistema busca centralizar essas informações em uma interface simples, respon
 
 - Nome do cliente deve ser obrigatório;
 - E-mail deve ser obrigatório e possuir formato válido;
-- Modelo da camiseta deve ser selecionado;
+- O cliente deve poder escolher entre os modelos disponíveis.
+- O modelo escolhido deve ser identificado no formulário de pedido;
 - Tamanho deve ser selecionado;
 - Cor deve ser selecionada;
 - Estampa deve ser selecionada;
 - Quantidade deve ser informada;
-- O sistema deve impedir o envio do formulário quando houver dados inválidos.
 
  ### US04 — Personalizar Camiseta
 
@@ -99,6 +91,7 @@ O sistema busca centralizar essas informações em uma interface simples, respon
  Como um Cliente, quero revisar as informações da minha camiseta antes de confirmar o pedido para evitar erros no cadastro.
  Critérios de Aceitação:
 
+- O sistema deve impedir o envio do formulário quando houver dados inválidos.
 - O sistema deve apresentar um resumo das informações preenchidas;
 - O pedido somente deve ser registrado após a confirmação;
 - Após o cadastro, o usuário deve receber uma mensagem indicando que o pedido foi realizado.
@@ -136,7 +129,7 @@ O sistema busca centralizar essas informações em uma interface simples, respon
 
  ### US10 — Manter Preferências Localmente
 
- Como um Cliente, quero que algumas informações da minha utilização sejam armazenadas localmente para facilitar o uso da aplicação.
+ Como um Cliente, quero que meu nome e e-mail sejam armazenados localmente para não precisar preenchê-los novamente ao realizar outro pedido.
  Critérios de Aceitação:
 
 - O sistema deve utilizar Web Storage;
