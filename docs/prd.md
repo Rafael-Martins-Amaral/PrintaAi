@@ -65,7 +65,7 @@ O sistema busca centralizar essas informações em uma interface simples, respon
 
  ### US03 — Visualizar Camisetas
 
- Como um cliente, quero visualizar os modelos de camisetas disponíveis para conhecer as opções oferecidas pela PrintaAI.
+ Como um Cliente, quero visualizar os modelos de camisetas disponíveis para conhecer as opções oferecidas pela PrintaAI.
  Critérios de Aceitação:
 
 - Os modelos devem ser apresentados em cards;
@@ -81,13 +81,13 @@ O sistema busca centralizar essas informações em uma interface simples, respon
 
 - Nome do cliente deve ser obrigatório;
 - E-mail deve ser obrigatório e possuir formato válido;
-- O cliente deve poder escolher entre os modelos disponíveis.
+- O cliente deve poder escolher entre os modelos disponíveis;
 - O modelo escolhido deve ser identificado no formulário de pedido;
 - O sistema deve impedir o envio do formulário quando houver dados inválidos.
 
  ### US05 — Personalizar Camiseta
 
- Como um Cliente, quero escolher características da camiseta, para criar um pedido de acordo com minhas preferências.
+ Como um Cliente, quero escolher as características da camiseta para criar um pedido de acordo com minhas preferências.
  Critérios de Aceitação:
 
 - O tamanho deve ser selecionado entre opções disponíveis;
