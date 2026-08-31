@@ -120,7 +120,7 @@ Critérios de Aceitação:
 Os pedidos devem ser enviados para a API utilizada pela aplicação;
 Os dados devem ser armazenados em formato JSON;
 A aplicação deve conseguir recuperar os pedidos armazenados.
-###US10 — Manter Preferências Localmente
+### US10 — Manter Preferências Localmente
 
 Como um Cliente, quero que algumas informações da minha utilização sejam armazenadas localmente para facilitar o uso da aplicação.
 
