@@ -2,6 +2,8 @@
 
 Este documento descreve a arquitetura técnica, o modelo de dados e os contratos da API simulada pelo JSON Server necessários para o funcionamento da aplicação **PrintaAI**, um sistema web de pedidos de camisetas personalizadas.
 
+---
+
 ## 1. Arquitetura Geral
 
 A aplicação será desenvolvida utilizando múltiplas páginas HTML, JavaScript para manipulação dinâmica dos dados e JSON Server como API Fake para armazenamento das informações.
@@ -15,6 +17,8 @@ A aplicação será desenvolvida utilizando múltiplas páginas HTML, JavaScript
 * JSON Server
 * LocalStorage
 * ViaCEP
+
+---
 
 ## 2. Estrutura de Páginas
 
@@ -77,6 +81,8 @@ Funcionalidades:
 * Status do pedido;
 * Exclusão de pedidos.
 
+---
+
 ## 3. Modelo de Dados (Diagrama ER)
 
 O Diagrama Entidade-Relacionamento representa a estrutura do banco de dados simulado pelo arquivo `db.json`.
@@ -120,6 +126,8 @@ erDiagram
     }
 ```
 
+---
+
 ## 4. Dicionário de Dados
 
 ### 👤 Usuários
@@ -160,6 +168,8 @@ Responsável por registrar os pedidos realizados pelos usuários autenticados.
 * **status:** Situação atual do pedido, como Recebido, Em Produção ou Concluído.
 * **data:** Data de criação do pedido em formato ISO.
 
+  ---
+
 ## 5. Rotas da API (JSON Server)
 
 A aplicação utilizará o JSON Server para persistir e recuperar os dados através de requisições assíncronas utilizando `fetch`.
@@ -182,6 +192,8 @@ A aplicação utilizará o JSON Server para persistir e recuperar os dados atrav
 * `POST /pedidos` → Registra um novo pedido.
 * `DELETE /pedidos/:id` → Remove um pedido existente.
 
+---
+
 ## 6. Integração com API Pública
 
 A aplicação utilizará a API pública **ViaCEP** para consultar automaticamente os dados de endereço a partir do CEP informado pelo cliente.
@@ -198,6 +210,8 @@ Os dados retornados serão utilizados para preencher automaticamente:
 
 Caso o CEP seja inválido ou não seja encontrado, a aplicação deverá apresentar uma mensagem de erro ao usuário.
 
+---
+
 ## 7. Persistência Local
 
 Além da API Fake, a aplicação utilizará **LocalStorage** para armazenar informações do usuário autenticado e facilitar o preenchimento de novos pedidos.
@@ -209,6 +223,8 @@ Dados armazenados localmente:
 * Identificador do usuário autenticado.
 
 Essas informações serão recuperadas automaticamente durante uma nova utilização da aplicação.
+
+---
 
 ## 8. Estrutura do Banco de Dados (`db.json`)
 
@@ -260,6 +276,8 @@ Essas informações serão recuperadas automaticamente durante uma nova utiliza�
   ]
 }
 ```
+
+---
 
 ## 9. Critérios Técnicos de Conclusão
 
