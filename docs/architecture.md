@@ -94,14 +94,18 @@ erDiagram
     CAMISETA ||--o{ PEDIDO : pertence
 
     USUARIO {
-        int PK
+        int id PK
         string nome
         string email
         string senha
+        string cep
+        string endereco
+        string cidade
+        string estado
     }
 
     CAMISETA {
-        int PK
+        int id PK
         string nome
         string modelo
         string imagem
@@ -109,17 +113,13 @@ erDiagram
     }
 
     PEDIDO {
-        int PK
+        int id PK
         int usuarioId FK
         int camisetaId FK
         string tamanho
         string cor
         string estampa
         int quantidade
-        string cep
-        string endereco
-        string cidade
-        string estado
         string observacao
         string status
         string data
