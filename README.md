@@ -11,7 +11,7 @@ Para entender as regras de negócio, o escopo e a arquitetura técnica da aplica
 
 - [📄 Product Requirements Document (PRD)](./docs/prd.md) — Visão geral, atores, funcionalidades e histórias de usuário.
 - [🛠️ Especificação Técnica (Architecture)](./docs/architecture.md) — Modelo de dados, relacionamentos, dicionário de dados e estrutura da API.
-- 🎨 Prototipação de Telas (Stitch)
+- 🎨 Prototipação de Telas (Figma)
 
 ---
 
