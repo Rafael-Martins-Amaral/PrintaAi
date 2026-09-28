@@ -1,0 +1,31 @@
+{
+  "name": "printaai",
+  "version": "1.0.0",
+  "description": "O PrintaAI é uma aplicação web para gerenciamento de pedidos de camisetas personalizadas. O sistema permite que clientes escolham características da camiseta, como   modelo, cor, tamanho e estampa, e registrem seus pedidos de forma simples e organizada.  A aplicação também permite consultar os pedidos realizados e utilizar uma API pública de CEP para facilitar o preenchimento do endereço durante o cadastro do pedido.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rafael-Martins-Amaral/PrintaAi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Rafael-Martins-Amaral/PrintaAi/issues"
+  },
+  "homepage": "https://github.com/Rafael-Martins-Amaral/PrintaAi#readme",
+  "dependencies": {
+    "jquery": "^4.0.0",
+    "uuid": "^14.0.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
